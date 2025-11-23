@@ -1,0 +1,92 @@
+:root{
+    --list-group-item-success:#57d630;
+    --list-group-item-warning:#f1f503;
+}
+.fait{
+    background-color: var(--list-group-item-success);
+}
+.nonfait{
+    background-color: var(--list-group-item-warning);
+}
+body{
+    margin: 0;
+}
+header{
+    position: relative;
+    width: 100%;
+    padding:5px;
+    background-color: black;
+    margin-bottom: 10px;
+    top: 0;
+}
+h1{
+    color: white;
+}
+.grille{
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    background-color: rgb(247, 247, 242,0.75);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(31, 31, 31,0.7);
+}
+.search{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    padding-left: 10px;
+}
+.search form #recherche{
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 1px 10px rgb(116, 116, 207,0.8);
+    margin-bottom: 5px;
+}
+.search form .btn{
+    width: 20%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    box-shadow: 1px 1px 10px rgba(252, 252, 253, 0.8);
+}
+.todos{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr;
+    gap: 1px;
+}
+.todos .todo{
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(200, 236, 144);
+    font-size: 12px;
+/*background-color: rgba(235, 245, 245, 0.7);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.todos .todo .undo{
+    background-color: rgb(67, 67, 228);
+    border-style: none;
+    color: white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.todos .todo .reset{
+    background-color: rgb(241, 85, 85);
+    border-style: none;
+    color: white;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
